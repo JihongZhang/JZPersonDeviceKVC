@@ -43,7 +43,7 @@ int main(int argc, const char * argv[])
         NSString *maxPrice = [person valueForKeyPath:@"devices.@max._price"];
         NSLog(@"%@", totalDevice);
         
-        NSLog(@"Totl device: %@, price sum: %@, average price: %@, minPrice: %@, maxPrice: %@", totalDevice, priceSum, avgPrice, minPrice, maxPrice);
+        NSLog(@"Totl device for %@: %@, price sum: %@, average price: %@, minPrice: %@, maxPrice: %@", [person valueForKey:@"name"], totalDevice, priceSum, avgPrice, minPrice, maxPrice);
 
         
         [person release];
